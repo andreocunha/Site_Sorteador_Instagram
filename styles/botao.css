@@ -1,0 +1,59 @@
+.botao-area {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.pulse {
+    font: normal 15pt Arial;
+    background: #148f14;
+    color: white;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    border-radius: 50%;
+    text-transform: uppercase;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 55%; */
+    /* transform: translate(-50%, 50%); */
+    animation: animacaoBotao 2.5s linear infinite;
+    transition: background-color 0.3s;
+}
+.pulse:hover {
+    background: rgb(15, 66, 15);
+}
+@keyframes animacaoBotao {
+    0%{
+        box-shadow: 0 0 0 0 rgba(20, 143, 20, 0.7), 0 0 0 0 rgba(20, 143, 20, 0.7);
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgba(20, 143, 20, 0), 0 0 0 0 rgba(20, 143, 20, 0.7);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgba(20, 143, 20, 0), 0 0 0 30px rgba(20, 143, 20, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(20, 143, 20, 0), 0 0 0 30px rgba(20, 143, 20, 0);
+    }
+}
+
+.botao-reset {
+    font: normal 10pt Arial;
+    background: #b17221;
+    color: white;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    transition: background-color 0.3s;
+}
+
+.botao-reset:hover {
+    background: #885717;
+}
